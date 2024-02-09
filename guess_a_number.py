@@ -2,6 +2,7 @@
 
 import random
 
+# inserting the variables
 top_of_range = (input("Choose a number: "))
 
 if top_of_range.isdigit ():
@@ -18,6 +19,7 @@ else:
 random_number = random.randint(0, top_of_range)
 guesses = 0
 
+# main loop
 while True:
     guesses += 1
     user_guess = input("Guess: ")
@@ -35,3 +37,5 @@ while True:
     else:
         print ("Your guess is lower the number.")
 
+# final result
+print ("You guess it in", guesses, "times.")
