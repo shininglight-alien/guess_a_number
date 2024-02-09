@@ -2,7 +2,7 @@
 
 import random
 
-top_of_range = int(input("Choose a number: "))
+top_of_range = (input("Choose a number: "))
 
 if top_of_range.isdigit ():
     top_of_range = int(top_of_range)
@@ -28,7 +28,7 @@ while True:
         continue
 
     if user_guess == random_number:
-        print ("You did it")
+        print ("Nice, you had it!")
         break
     elif user_guess > random_number:
         print ("Your guess is higher the number.")
