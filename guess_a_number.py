@@ -24,9 +24,14 @@ while True:
     if user_guess.isdigit():
         user_guess = int(user_guess)
     else:
-        print(Choose a number the next time you try.)
+        print ("Choose a number the next time you try.")
         continue
 
- if user_guess == random_number:
-        print(You did it")
+    if user_guess == random_number:
+        print ("You did it")
         break
+    elif user_guess > random_number:
+        print ("Your guess is higher the number.")
+    else:
+        print ("Your guess is lower the number.")
+
